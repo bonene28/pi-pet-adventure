@@ -25,7 +25,11 @@
 
 <script>
 function selectPet(pet){
-    alert("You selected: " + pet);
+
+    localStorage.setItem("selectedPet", pet);
+
+    window.location.href = "gameplay.html";
+
 }
 </script>
 
