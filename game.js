@@ -5,19 +5,8 @@ const settingBtn = document.getElementById("settingBtn");
 const exitBtn = document.getElementById("exitBtn");
 
 startBtn.onclick = function () {
-    document.body.innerHTML = `
-        <div class="menu">
-            <h1>Choose Your Pet</h1>
-
-            <button>🐶 Dog</button><br><br>
-
-            <button>🐱 Cat</button><br><br>
-
-            <button>🐰 Rabbit</button><br><br>
-
-            <button>🐼 Panda</button>
-        </div>
-    `;
+    window.location.href = "pet.html"
+    
 };
 
 settingBtn.onclick = function () {
