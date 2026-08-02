@@ -1,49 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pi Pet Adventure - Green Forest</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Choose Your Pet</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="game-ui">
+<div class="menu">
 
-    <h2>🌳 Green Forest</h2>
+<h1>🐾 Choose Your Pet 🐾</h1>
 
-    <div class="status">
-        <p>❤️ HP: <span id="hp">100</span>/100</p>
-        <p>💙 Mana: <span id="mana">100</span>/100</p>
-        <p>⭐ Level: <span id="level">1</span></p>
-        <p>🪙 Gold: <span id="gold">0</span></p>
-    </div>
+<button onclick="selectPet('Dog')">🐶 Dog</button><br><br>
 
-    <div class="pet">
-        🐶
-        <p>Your Pet</p>
-    </div>
+<button onclick="selectPet('Cat')">🐱 Cat</button><br><br>
 
-    <div class="enemy">
-        👾
-        <p>Green Slime</p>
-        <p>❤️ HP: <span id="enemyHp">50</span>/50</p>
-    </div>
+<button onclick="selectPet('Rabbit')">🐰 Rabbit</button><br><br>
 
-    <div class="skills">
-        <button id="attackBtn">⚔ Auto Attack</button>
-        <button id="skillBtn">✨ Skill</button>
-        <button id="superBtn">🔥 Super Skill</button>
-    </div>
-
-    <div class="quest">
-        <h3>📜 Main Quest</h3>
-        <p>Defeat 5 Green Slimes (0/5)</p>
-    </div>
+<button onclick="selectPet('Panda')">🐼 Panda</button>
 
 </div>
 
-<script src="game.js"></script>
+<script>
+function selectPet(pet){
+    alert("You selected: " + pet);
+}
+</script>
 
 </body>
 </html>
