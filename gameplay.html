@@ -3,46 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pi Pet Adventure</title>
+<title>PetVerse Battle</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<div class="menu">
+<canvas id="gameCanvas" width="800" height="500"></canvas>
 
-<h2>🌳 Green Forest</h2>
-
-<p id="petName"></p>
-
-<p>❤️ HP: 100 / 100</p>
-<p>💙 Mana: 100 / 100</p>
-<p>⭐ Level: 1</p>
-
-<hr>
-
-<h3>👾 Green Slime</h3>
-
-<p>Enemy HP: 50 / 50</p>
-
-<button id="attackBtn">⚔ Auto Attack</button><br><br>
-
-<button id="skillBtn">✨ Skill</button><br><br>
-
-<button id="superBtn">🔥 Super Skill</button>
-
-<hr>
-
-<h3>📜 Main Quest</h3>
-
-<p>Defeat 5 Green Slimes (0/5)</p>
-
-</div>
-
-<script>
-const pet = localStorage.getItem("selectedPet");
-document.getElementById("petName").innerHTML = "🐾 Your Pet: " + pet;
-</script>
+<script src="game.js"></script>
 
 </body>
 </html>
