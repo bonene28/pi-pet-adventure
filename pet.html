@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Choose Your Pet</title>
+<title>PetVerse - Choose Your Pet</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,25 +11,37 @@
 
 <div class="menu">
 
-<h1>🐾 Choose Your Pet 🐾</h1>
+<h1>Choose Your Starter Pet</h1>
+<p>Select one pet to begin your adventure.</p>
 
-<button onclick="selectPet('Dog')">🐶 Dog</button><br><br>
+<div class="pet-card">
+<h2>🔥 Blaze Fox</h2>
+<p>Element: Fire</p>
+<p>HP: 120 | ATK: 30 | DEF: 15 | SPD: 20</p>
+<button onclick="selectPet('Blaze Fox')">Choose</button>
+</div>
 
-<button onclick="selectPet('Cat')">🐱 Cat</button><br><br>
+<div class="pet-card">
+<h2>💧 Aqua Wolf</h2>
+<p>Element: Water</p>
+<p>HP: 140 | ATK: 25 | DEF: 20 | SPD: 18</p>
+<button onclick="selectPet('Aqua Wolf')">Choose</button>
+</div>
 
-<button onclick="selectPet('Rabbit')">🐰 Rabbit</button><br><br>
-
-<button onclick="selectPet('Panda')">🐼 Panda</button>
+<div class="pet-card">
+<h2>🌿 Leaf Bunny</h2>
+<p>Element: Nature</p>
+<p>HP: 130 | ATK: 22 | DEF: 22 | SPD: 22</p>
+<button onclick="selectPet('Leaf Bunny')">Choose</button>
+</div>
 
 </div>
 
 <script>
-function selectPet(pet){
-
-    localStorage.setItem("selectedPet", pet);
-
-    window.location.href = "gameplay.html";
-
+function selectPet(name){
+    localStorage.setItem("starterPet", name);
+    alert("You selected " + name + "!");
+    location.href="gameplay.html";
 }
 </script>
 
